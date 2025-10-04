@@ -297,6 +297,9 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
+          # Loopkit: Update Guardrail Settings
+          curl https://github.com/Mayci-Loop/Loopkit/commit/27a07e418f254143a088e906de93a089022f072d.patch | git apply -v --directory=Loopkit
+      
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
